@@ -825,9 +825,9 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "crewai", extras = ["tools"], specifier = ">=0.140.0,<1.0.0" },
-    { name = "pypdf2", specifier = ">=3.0.1" },
+    { name = "pypdf2", specifier = ">=3.0.0" },
     { name = "python-docx", specifier = ">=0.8.11" },
-    { name = "yagmail", specifier = ">=0.15.293" },
+    { name = "yagmail", specifier = ">=0.15.0" },
 ]
 
 [[package]]

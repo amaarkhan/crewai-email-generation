@@ -1,15 +1,20 @@
-Subject: Sick Leave Request - Amaar Khan (20-CS-123)
+Subject: Application for Frontend Developer Position - Amaar Khan
 
-Dear Dr. [Course Instructor's Name],
+Dear Hiring Manager,
 
-This email is to formally request a two-day sick leave from your classes. I am currently suffering from a viral infection and have been advised by my physician to rest for two days to facilitate a full recovery.
+I am writing to express my keen interest in the Frontend Developer position advertised on [Platform where you saw the advertisement -  if applicable].  Having followed [Company Name]'s work in [mention something specific you admire about the company, if applicable], I am confident my skills and experience align perfectly with your requirements.
 
-My name is Amaar Khan, my roll number is 20-CS-123, and I am a sixth-semester BSCS student.  This absence will affect my attendance on July 5th and July 6th, 2025. I will make every effort to obtain notes from classmates and complete any missed assignments promptly upon my return.  I will also reach out to you during my absence if any urgent matters arise regarding coursework.
+I recently completed my Bachelor of Science in Computer Science from FAST-NUCES, Islamabad.  My three months of experience as a web developer using React at Techvalley, coupled with my current three-month internship at the KP Assembly, has provided me with practical, hands-on experience in developing interactive web applications.  This experience, combined with my knowledge of ReactJS, TypeScript, HTML, CSS/SCSS, JavaScript, and a basic understanding of Redux and state management concepts, directly addresses the must-have skills outlined in the job description.  Furthermore, my familiarity with Material UI, Axios, and Chart.js, as well as basic Node.js and backend integration, makes me a strong candidate.
 
-Thank you for your understanding and consideration.
+I am a quick learner and adept at adapting to new technologies in fast-paced Agile environments. My communication skills are strong, and I am comfortable explaining technical concepts clearly and concisely.
+
+My resume, attached for your review, provides further details on my qualifications and experience.  I am eager to learn more about this opportunity and discuss how my skills can contribute to your team's success.
+
+Thank you for your time and consideration.
 
 Sincerely,
 
 Amaar Khan
-20-CS-123
-BSCS, 6th Semester
+amaarkhan25@gmail.com
+03329156521
+https://www.linkedin.com/in/amaar-khan-749506297/

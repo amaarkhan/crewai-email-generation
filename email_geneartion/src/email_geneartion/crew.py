@@ -31,7 +31,7 @@ class EmailGeneartion():
     @task
     def extract_doc_task(self) -> Task:
         return Task(
-            config=self.tasks_config['extract_doc_task'],  # You must define this in tasks.yaml
+            config=self.tasks_config['extract_doc_task'],
             output_key="extracted_info"
         )
 
@@ -39,7 +39,7 @@ class EmailGeneartion():
     @task
     def generate_email_task(self) -> Task:
         return Task(
-            config=self.tasks_config['generate_email_task'],  # You must define this in tasks.yaml
+            config=self.tasks_config['generate_email_task'],
             context=[self.extract_doc_task()],
             output_file='generated_email.txt'
         )
