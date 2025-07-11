@@ -1,24 +1,31 @@
-# CrewAI Email Generation Project
 
-A powerful email generation tool using CrewAI framework that automatically creates professional emails based on document content and user input.
+# AI Email Scheduler & Generator
 
-## Features
+A comprehensive web-based email generation and scheduling system using CrewAI framework with a beautiful Flask frontend. Generate and schedule professional emails with AI assistance, document analysis, and attachment support.
 
-- **Document Analysis**: Automatically extracts key information from `.txt`, `.pdf`, and `.docx` files
-- **AI-Powered Email Generation**: Uses Gemini AI to craft professional, context-aware emails
-- **Email Sending**: Automatically sends generated emails via Gmail SMTP
-- **File Attachments**: Supports adding file attachments from the `Attach_folders` directory
-- **No Placeholders**: Generates complete, ready-to-send emails with no placeholder text
+## 🌟 Features
 
-## Prerequisites
+- **🌐 Web Interface**: Beautiful, responsive web frontend for easy email management
+- **⏰ Email Scheduling**: Schedule emails for future delivery with date/time picker
+- **📄 Document Analysis**: Upload and analyze `.txt`, `.pdf`, and `.docx` files for content
+- **🤖 AI-Powered Generation**: Uses Gemini AI to craft professional, context-aware emails
+- **📎 File Attachments**: Upload multiple attachments or use files from `Attach_folders`
+- **📧 Gmail Integration**: Secure sending via Gmail SMTP with App Password
+- **📊 Scheduling Dashboard**: View, manage, and cancel scheduled emails
+- **🔄 Real-time Status**: Track email status (scheduled, sent, failed, cancelled)
+- **📱 Mobile Friendly**: Responsive design works on desktop and mobile devices
+
+## 🚀 Quick Start
+
+### Prerequisites
 
 - Python 3.10 or higher
 - Gmail account with App Password enabled
 - Google Gemini API key
 
-## Installation
+### Installation
 
-1. **Clone the project**:
+1. **Clone and navigate to the project**:
    ```bash
    git clone <your-repo-url>
    cd crewai-email-generation/email_geneartion
@@ -27,20 +34,63 @@ A powerful email generation tool using CrewAI framework that automatically creat
 2. **Install dependencies**:
    ```bash
    uv install
+   # OR
+   pip install -r requirements.txt
    ```
 
 3. **Set up environment variables**:
-   Create a `.env` file in the project root with:
-   ```properties
+   Create a `.env` file in the project root:
+   ```env
    MODEL=gemini/gemini-1.5-flash
    GEMINI_API_KEY=your_gemini_api_key_here
    ```
 
-4. **Set up Gmail App Password**:
-   - Go to your Google Account settings
-   - Enable 2-factor authentication
-   - Generate an App Password for this application
-   - Use this 16-character password when prompted
+4. **Start the web application**:
+   ```bash
+   python run_flask_app.py
+   # OR
+   python -m src.email_geneartion.app
+   ```
+
+5. **Open your browser**:
+   Navigate to `http://localhost:5000`
+
+## 🖥️ Web Interface Usage
+
+### 📧 Send Email Immediately
+
+1. **Fill in the form**:
+   - Enter email topic (e.g., "Job Application", "Meeting Request")
+   - Upload a document for AI content analysis (optional)
+   - Add file attachments (optional)
+   - Enter recipient and your Gmail details
+   - Enter your Gmail App Password
+
+2. **Select "Send Now"** and click "Process Email"
+
+3. **AI will**:
+   - Analyze your document
+   - Generate professional email content
+   - Send immediately to recipient
+
+### ⏰ Schedule Email for Later
+
+1. **Fill in the form** (same as above)
+
+2. **Select "Schedule for Later"**
+
+3. **Pick date and time** using the datetime picker
+
+4. **Click "Process Email"**
+
+5. **Email will be automatically sent** at the scheduled time
+
+### 📊 Manage Scheduled Emails
+
+- **View scheduled emails**: Navigate to `/scheduled_emails`
+- **Cancel emails**: Click cancel button next to any scheduled email
+- **Check status**: See if emails are scheduled, sent, failed, or cancelled
+- **Debug scheduler**: Visit `/debug/scheduler` for technical details
 
 ## Project Structure
 
@@ -169,6 +219,10 @@ To modify the email generation logic:
 - Edit `config/agents.yaml` to change agent behavior
 - Edit `config/tasks.yaml` to modify task descriptions
 - Modify `crew.py` to change the workflow
+
+<img width="1919" height="1079" alt="Screenshot 2025-07-11 112506" src="https://github.com/user-attachments/assets/0a069a3f-0c26-4903-af72-b8a06a670685" />
+
+<img width="1919" height="1079" alt="Screenshot 2025-07-11 112449" src="https://github.com/user-attachments/assets/7f4d3817-5bb6-4b32-885c-7517cd3cc2d1" />
 
 ## License
 
