@@ -16,7 +16,7 @@ class EmailGeneartion():
     def doc_extractor(self) -> Agent:
         return Agent(
             config=self.agents_config['doc_extractor'],  # You must define this in agents.yaml
-            verbose=True
+            verbose=False
         )
 
     # Agent 2: Generate email
@@ -24,7 +24,7 @@ class EmailGeneartion():
     def email_writer(self) -> Agent:
         return Agent(
             config=self.agents_config['email_writer'],  # You must define this in agents.yaml
-            verbose=True
+            verbose=False
         )
 
     # Task 1: Read and extract important details from document
@@ -50,5 +50,5 @@ class EmailGeneartion():
             agents=self.agents,
             tasks=self.tasks,
             process=Process.sequential,
-            verbose=True
+            verbose=False
         )
